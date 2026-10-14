@@ -1,0 +1,6 @@
+{
+  "name": "NeonWave Audio | Retro-Futuristic Sound Devices",
+  "description": "High-fidelity audio store specializing in premium headphones, neckbands, airbuds, and handsfree gear wrapped in retro-futuristic synthwave aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

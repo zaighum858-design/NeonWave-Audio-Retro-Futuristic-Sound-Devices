@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-orbitron: 'Orbitron', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-poppins);
+    letter-spacing: 0.035em;
+    line-height: 1.75;
+    background-color: #0b0314;
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    letter-spacing: 0.05em;
+    line-height: 1.25;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+  }
+
+  p {
+    word-spacing: 0.06em;
+    line-height: 1.8;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
+  }
+
+  span, li, a, label {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+  }
+}
+
+/* Synthwave Neon Glow Utilities */
+.neon-glow-pink {
+  text-shadow: 0 0 7px rgba(255, 42, 133, 0.7), 0 0 18px rgba(255, 42, 133, 0.5), 0 0 35px rgba(255, 42, 133, 0.3);
+}
+
+.neon-glow-cyan {
+  text-shadow: 0 0 7px rgba(6, 182, 212, 0.7), 0 0 18px rgba(6, 182, 212, 0.5), 0 0 35px rgba(6, 182, 212, 0.3);
+}
+
+.neon-glow-gold {
+  text-shadow: 0 0 7px rgba(251, 191, 36, 0.7), 0 0 18px rgba(245, 158, 11, 0.5), 0 0 30px rgba(245, 158, 11, 0.3);
+}
+
+.neon-glow-purple {
+  text-shadow: 0 0 7px rgba(168, 85, 247, 0.7), 0 0 18px rgba(168, 85, 247, 0.5);
+}
+
+.neon-border-pink {
+  border-color: rgba(255, 42, 133, 0.5);
+  box-shadow: 0 0 15px rgba(255, 42, 133, 0.25), inset 0 0 15px rgba(255, 42, 133, 0.1);
+}
+
+.neon-border-cyan {
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25), inset 0 0 15px rgba(6, 182, 212, 0.1);
+}
+
+.neon-border-purple {
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.25), inset 0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+.neon-border-orange {
+  border-color: rgba(249, 115, 22, 0.5);
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.25), inset 0 0 15px rgba(249, 115, 22, 0.1);
+}
+
+.glass-panel {
+  background: rgba(18, 6, 32, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 42, 133, 0.22);
+}
+
+.glass-panel-subtle {
+  background: rgba(13, 4, 25, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090214;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ec4899, #8b5cf6, #f59e0b);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f43f5e, #a855f7, #fbbf24);
+}
